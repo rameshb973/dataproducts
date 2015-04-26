@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nbmi <- function(ht,htin,wt) (wt/((ht*12)+htin)^2)*703\n\nshinyServer(function(input, output) {\n\n output$oid1 <- renderPrint({bmi(input$ht,input$htin, input$wt)})\n \n #output$oid2 <- renderPrint(if $oid1 > 25 then ) \n \n #output$oid1 <- renderPrint({input$wt})\n  \n  })\n",
+    "created" : 1429392991053.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2817016202",
+    "id" : "A1644B26",
+    "lastKnownWriteTime" : 1430016180,
+    "path" : "~/coursera-project/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

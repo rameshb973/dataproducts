@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application for calculating BMI.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\n\nshinyUI(fluidPage(\n\n  # Application title\n  titlePanel(\"Calculate your BMI\"),\n\n  # Sidebar with a slider input for number of bins\n  sidebarLayout(\n    sidebarPanel(\n      # weight input\n      sliderInput(\"wt\", \"Set your Weight in lbs\", \n                  min = 0, max = 500, value = 0),\n      sliderInput(\"ht\", \"Set your height - feet\", \n                  min = 0, max = 8, value = 5),\n      sliderInput(\"htin\", \"Set your height - inches\", \n                  min = 0, max = 11, value = 5)\n      \n      \n      #numericInput('wt', 'Enter your Weight in lbs', 0, min = 0, max = 500),\n      #numericInput('ht', 'Enter your height in inches', 0, min = 0, max = 500)\n      \n    ),\n\n    # Show a plot of the generated distribution\n    mainPanel(\n      h3('Your BMI is '),\n      verbatimTextOutput(\"oid1\"),\n      h5(\"1. BMI below 18.5 is underweight\"),\n      h5(\"2. BMI between 18.5 to 24.9 is healthy and normal\"),\n      h5(\"3. BMI between 25 and 29.9 is overweight\"),\n      h5(\"4. BMI equal to 30 and above is obese \")\n      \n    )\n  )\n))\n",
+    "created" : 1429392990885.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3991971380",
+    "id" : "9ECF4B5A",
+    "lastKnownWriteTime" : 1430022395,
+    "path" : "~/coursera-project/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
